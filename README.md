@@ -149,4 +149,3 @@ Based on the generated traces across Windows and Linux environments, the followi
    - On Windows, `-O0` and `-Os` frequently produced extreme leakage (e.g., Clang `-Os` yielded `|t| > 100` for all primitives). 
    - On Linux, `-O0` was generally stable (mostly PASS), while `-Os` and `-Ofast` in GCC were more prone to leakage, particularly for Barrett Reduction.
 4. **Environment Impact:** The Windows environment exhibited substantially higher timing variability and leakage frequency (32 out of 36 failures) compared to the Linux environment with CPU pinning (11 out of 24 failures). This highlights the critical role of OS-level noise mitigation (such as `taskset` and `nice`) in microarchitectural timing experiments.
-```
