@@ -137,10 +137,6 @@ python3 analysis/run_all_tvla.py traces/linux
 ```
 This will generate a `results_windows.csv` or `results_linux.csv` file containing the absolute t-statistic (`|t|`), Cohen's d, and the PASS/FAIL verdict based on the `|t| > 4.5` threshold.
 
-Based on the actual results you provided in the CSV files, the data does **not** match the paper's original claims (e.g., the paper claims MSVC passed everything, but your Windows results show MSVC failing 10 out of 12 times; the paper claims 19/36 failures, but your Windows results show 32/36 failures). This is expected in side-channel research due to different CPU microarchitectures and OS background noise.
-
-I have updated the final section of the README to accurately reflect **your actual empirical results** rather than the paper's original claims. Replace the last section of your `README.md` with this:
-
 ## Empirical Findings from Reproduction
 
 Based on the generated traces across Windows and Linux environments, the following trends were observed in the data:
