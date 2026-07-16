@@ -34,7 +34,7 @@ mlkem-tvla/
 │   ├── windows/           # Cycle-count CSVs generated on Windows
 │   └── linux/             # Cycle-count CSVs generated on Linux
 ├── build_msvc.bat         # Batch script to build MSVC binaries
-├── results_windows.csv    # Final TVLA verdicts for Windows
+├── windows_results.csv    # Final TVLA verdicts for Windows
 └── results_linux.csv      # Final TVLA verdicts for Linux
 ```
 
